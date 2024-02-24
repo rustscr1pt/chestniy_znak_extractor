@@ -34,7 +34,7 @@ impl App for MainBody {
             self.render_side_panel(ui, frame)
         });
 
-        eframe::egui::TopBottomPanel::new(Bottom, "bottom").exact_height(120f32).resizable(false).show(ctx, |ui| {
+        eframe::egui::TopBottomPanel::new(Bottom, "Bottom").exact_height(120f32).resizable(false).show(ctx, |ui| {
             self.render_logs_bottom(ui)
         });
 
